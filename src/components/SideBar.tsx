@@ -27,7 +27,7 @@ export default function SideBar() {
           {isOpen ? <ArrowLeftFromLine size={36} /> : <ArrowRightFromLine size={36} />}
         </button>
         {isOpen && (
-          <h3 className="text-xl text-[#FFF6DF] font-bold text-left ml-3 pt-16 border-b-2 border-[#FF7C2B] pb-1 ">My playlists</h3>
+          <h3 className="text-xl text-[#FFF6DF] font-bold text-left ml-3 pt-16 border-b-2 border-[#FF7C2B] pb-1 w-50">My playlists</h3>
         )}
       </aside>
     </div>
