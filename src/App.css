@@ -9,3 +9,14 @@
   padding: 2rem;
   text-align: center;
 }
+
+/*Dont remove! This makes the horisontal scrollbar for the songs to disapear and not be visible*/
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/*Same with this*/
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

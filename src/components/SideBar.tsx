@@ -23,6 +23,7 @@ export default function SideBar() {
           className="absolute top-1/2 right-0 bg-[#151819] rounded-full text-[#FF7C2B] p-1 border-2 border-[#FC517C]"
           style={{ transform: 'translateX(50%)' }}
         >
+          {/*Logic for changing the way the arrow faces based on if the sidebare is open or not*/}
           {isOpen ? <ArrowLeftFromLine size={36} /> : <ArrowRightFromLine size={36} />}
         </button>
         {isOpen && (
