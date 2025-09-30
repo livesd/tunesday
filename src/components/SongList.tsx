@@ -3,20 +3,25 @@ import { songs } from "@/data/songs";
 type Song = (typeof songs)[number];
 
 type Props = {
+  songs?: Song[];
+  category?: string;
   onSelect?: (song: Song) => void;
 };
 
-export default function SongList({ onSelect }: Props) {
+export default function SongList({ songs: songsProp, category, onSelect }: Props) {
+  // Use provided songs or fall back to all songs
+  const songsToShow = songsProp || songs;
+  const categoryName = category || "KATEGORI";
   return (
-    <div className="mt-10">
+    <div className="mt-10 w-full">
       <div className="flex flex-col gap-1 mb-2">
-        <h3 className="text-[#FFF6DF] flex text-lg">KATEGORI</h3>
+        <h3 className="text-[#FFF6DF] flex text-lg">{categoryName.toUpperCase()}</h3>
         <div className="border-t border-[#FC517C] w-150" />
       </div>
-      <div className="mt-4 overflow-auto scrollbar-hide">
-        <div className="flex gap-2 px-2">
+      <div className="mt-4 w-full">
+        <div className="flex gap-2 px-2 justify-start items-start w-full overflow-x-auto scrollbar-hide">
           {/*Mapping each song in the list to show title, artist and cover*/}
-          {songs.map((song) => (
+          {songsToShow.map((song) => (
             <button
               key={song.id}
               type="button"
