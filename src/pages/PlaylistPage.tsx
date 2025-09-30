@@ -3,6 +3,7 @@ import { songs } from "@/data/songs";
 import PlayButton from "@/components/PlayButton";
 import ShuffleButton from "@/components/ShuffleButton";
 import SelectedSongWindow from "@/components/SelectedSongWindow";
+import { HomeButton } from "@/components/HomeButton";
 import karpe from "@/assets/karpe.jpg";
 import SideBar from "@/components/SideBar";
 
@@ -13,6 +14,11 @@ export default function PlaylistPage() {
   return (
     <div className="min-h-screen bg-[#121415] text-[#FFF6DF]">
       <SideBar />
+      {/* Home Button */}
+      <div className="fixed top-4 right-4 z-50">
+        <HomeButton />
+      </div>
+      
       <div className="max-w-6xl mr-6 py-8 col-start-2">
         {/* Header */}
         <div className="flex items-end gap-6">
