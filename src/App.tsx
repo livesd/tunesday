@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./App.css";
 import "tailwindcss";
-import SideBar from "./components/SideBar";
 import SongList from "./components/SongList";
 import SelectedSongWindow from "./components/SelectedSongWindow";
 import FilterButton from "./components/FilterButton";
@@ -23,48 +22,46 @@ function App() {
   }, {} as Record<string, typeof songs>);
 
   const toggleFilter = () => {
-    setFilterType(prev => prev === "genre" ? "artist" : "genre");
+    setFilterType((prev) => (prev === "genre" ? "artist" : "genre"));
   };
 
   return (
-    <body className="flex flex-col bg-[#121415]">
+    <div className="flex flex-col bg-[#121415]">
       <div className="flex flex-col bg-[#121415] w-full">
         <div className="w-full text-2xl">
-          <h1 
-            className="pt-3 text-[#FFF6DF] text-center font-bold leading-none"
-          >
+          <h1 className="pt-3 text-[#FFF6DF] text-center font-bold leading-none">
             TUNESDAY
           </h1>
-            
-            {/* Filter Button */}
-            <div className="flex justify-center mt-4">
-              <FilterButton 
-                onToggle={toggleFilter}
-                nextFilter={filterType === "genre" ? "Artist" : "Genre"}
-              />
-            </div>
-            
-            <SideBar />
-          </div>
-          
-          <div className="w-full flex justify-start">
-            <SelectedSongWindow>
-              {(onSelect) => (
-                <div className="flex flex-col items-start w-full text-left justify-start ml-0 pl-0">
-                  {Object.entries(groupedSongs).map(([category, categorySongs]) => (
-                    <SongList 
-                      key={category}
-                      songs={categorySongs} 
-                      category={category}
-                      onSelect={onSelect} 
-                    />
-                  ))}
-                </div>
-              )}
-            </SelectedSongWindow>
+
+          {/* Filter Button */}
+          <div className="flex justify-center mt-4">
+            <FilterButton
+              onToggle={toggleFilter}
+              nextFilter={filterType === "genre" ? "Artist" : "Genre"}
+            />
           </div>
         </div>
-    </body>
+
+        <div className="w-full flex justify-start">
+          <SelectedSongWindow>
+            {(onSelect) => (
+              <div className="flex flex-col items-start w-full text-left justify-start ml-0 pl-0">
+                {Object.entries(groupedSongs).map(
+                  ([category, categorySongs]) => (
+                    <SongList
+                      key={category}
+                      songs={categorySongs}
+                      category={category}
+                      onSelect={onSelect}
+                    />
+                  )
+                )}
+              </div>
+            )}
+          </SelectedSongWindow>
+        </div>
+      </div>
+    </div>
   );
 }
 
