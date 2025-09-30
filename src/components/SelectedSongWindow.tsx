@@ -30,7 +30,7 @@ export default function SelectedSongWindow({ children }: ManagerProps) {
       {children(setSelected)}
       {selected && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-6"
+          className="fixed inset-0 z-50 flex justify-left bg-black/60 p-6"
           role="dialog"
           aria-modal="true"
           aria-label={`${selected.title} by ${selected.artist}`}
