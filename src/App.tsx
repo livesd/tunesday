@@ -4,6 +4,7 @@ import "tailwindcss";
 import SideBar from "./components/SideBar";
 import SongList from "./components/SongList";
 import SelectedSongWindow from "./components/SelectedSongWindow";
+import FilterButton from "./components/FilterButton";
 import { songs } from "./data/songs";
 
 type FilterType = "genre" | "artist";
@@ -37,12 +38,10 @@ function App() {
             
             {/* Filter Button */}
             <div className="flex justify-center mt-4">
-              <button
-                onClick={toggleFilter}
-                className="bg-[#FC517C] hover:bg-[#e64670] text-[#FFF6DF] px-4 py-1 rounded-lg font-semibold transition-colors duration-200 text-base"
-              >
-                View by {filterType === "genre" ? "Artist" : "Genre"}
-              </button>
+              <FilterButton 
+                onToggle={toggleFilter}
+                nextFilter={filterType === "genre" ? "Artist" : "Genre"}
+              />
             </div>
             
             <SideBar />
