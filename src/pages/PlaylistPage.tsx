@@ -68,7 +68,7 @@ export default function PlaylistPage() {
                 {/* Column headers */}
                 <div className="mt-8 grid grid-cols-[minmax(12rem,1fr)_minmax(10rem,1fr)_6rem] items-end text-xl font-extrabold text-[#FF7C2B] tracking-wide border-b border-[#FC517C] pb-1">
                   <span className="text-left">Title</span>
-                  <span className="-ml-112">Album</span>
+                  <span className="-ml-0.5">Album</span>
                   <span className="text-right">Length</span>
                 </div>
                 
