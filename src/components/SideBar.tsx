@@ -5,6 +5,7 @@ import PlayList from "./PlayList";
 import CreateButton from "./CreateButton";
 import PlaylistCreateSection from "./PlaylistCreateSection";
 
+//this function returns a sidebar component that appears on all pages
 export default function SideBar() {
   const [isOpen, setIsOpen] = useState(true);
   const navigate = useNavigate();
@@ -14,15 +15,14 @@ export default function SideBar() {
   // adds a new customed playlist name to the sidebar at the top
   function handleAddPlaylist(name: string) {
     setCustomPlaylists((p) => [name, ...p]);
-    setCreating(false); 
+    setCreating(false);
   }
 
   return (
     <div id="SideBar" className="fixed top-0 left-0 h-screen z-20">
       <aside
-        className={`h-full ${
-          isOpen ? "w-64 p-4" : "w-12 p-0"
-        } bg-[#151819] flex flex-col shadow-lg border-r-2 border-[#FC517C] duration-300`}
+        className={`h-full ${isOpen ? "w-64 p-4" : "w-12 p-0"
+          } bg-[#151819] flex flex-col shadow-lg border-r-2 border-[#FC517C] duration-300`}
       >
         <button
           onClick={() => setIsOpen(p => !p)}
@@ -58,8 +58,8 @@ export default function SideBar() {
               />
             </div>
             <div className="-mt-2 overflow-y-auto scrollbar-hide pb-4">
-            <ul className="mt-4 flex flex-col gap-5">
-            {customPlaylists.map((pl, i) => (
+              <ul className="mt-4 flex flex-col gap-5">
+                {customPlaylists.map((pl, i) => (
                   <li key={i}>
                     <button
                       type="button"
