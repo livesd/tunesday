@@ -8,7 +8,7 @@ import SideBar from "./components/SideBar.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <SideBar />
       <Routes>
         <Route path="/" element={<App />} />
