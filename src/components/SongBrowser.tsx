@@ -1,4 +1,3 @@
-// ...existing code...
 import { useState } from "react";
 import { useSongGrouping, type FilterType } from "@/hooks/useSongGrouping";
 import SongList from "@/components/SongList";
@@ -12,7 +11,7 @@ interface SongBrowserProps {
   className?: string;
 }
 
-{/* render song groups by either genre or artist with the filter button to switch*/}
+{/* render song groups by either genre or artist with the filter button to switch*/ }
 export default function SongBrowser({ onSelect, className = "" }: SongBrowserProps) {
   const [filterType, setFilterType] = useState<FilterType>("genre");
   function toggleFilter() {

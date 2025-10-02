@@ -9,7 +9,7 @@ import SideBar from "./components/SideBar.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
-    <SideBar/>
+      <SideBar />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/playlist" element={<PlaylistPage />} />

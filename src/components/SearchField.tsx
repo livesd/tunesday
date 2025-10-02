@@ -6,14 +6,14 @@ export default function SearchField() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<div className="flex items-center mt-5">
+		<div className="flex items-center mt-5 mr-2">
 			{/*If the searchfield is closed, it looks like this*/}
 			{isOpen === false && (
 				<button
 					onClick={() => setIsOpen(true)}
 					className="text-[#FFF6DF] hover:text-[#FF7C2B] "
 				>
-					<Search size={24} />
+					<Search size={29} />
 				</button>
 			)}
 
