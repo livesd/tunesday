@@ -25,7 +25,8 @@ export default function PlaylistPage() {
         <HomeButton />
       </div>
       
-      <div className="max-w-6xl mr-6 py-8 col-start-2">
+      {/* page itself */}
+      <div className="mx-auto w-full max-w-7xl px-12 py-8">
 
         {/* Header */}
         <div className="flex items-end gap-6">
