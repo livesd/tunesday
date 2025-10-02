@@ -13,7 +13,7 @@ export default function SongList({ songs: songsProp, category, onSelect }: Props
   const songsToShow = songsProp || songs;
   const categoryName = category || "KATEGORI";
   return (
-    <div className="mt-10 w-full">
+    <div className="mt-5 w-full ">
       <div className="flex flex-col gap-1 mb-2">
         <h3 className="text-[#FFF6DF] flex text-lg">{categoryName.toUpperCase()}</h3>
         <div className="border-t border-[#FC517C] w-150" />

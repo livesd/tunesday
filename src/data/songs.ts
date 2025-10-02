@@ -23,15 +23,6 @@ import pianoMan from "@/assets/pianoMan.jpg";
 
 export const songs = [
   {
-    id: 1,
-    title: "Golden",
-    artist: "HUNTR/X",
-    album: "KPop Demon Hunters Soundtrack",
-    duration: "3:40",
-    genre: "K-pop",
-    cover: golden,
-  },
-  {
     id: 2,
     title: "Maskulin",
     artist: "Ylva",
@@ -40,6 +31,16 @@ export const songs = [
     genre: "Pop",
     cover: maskulin,
   },
+  {
+    id: 1,
+    title: "Golden",
+    artist: "HUNTR/X",
+    album: "KPop Demon Hunters Soundtrack",
+    duration: "3:40",
+    genre: "K-pop",
+    cover: golden,
+  },
+
   {
     id: 3,
     title: "Lose Control",
@@ -112,7 +113,7 @@ export const songs = [
     genre: "Pop",
     cover: beautifulThings,
   },
-{
+  {
     id: 11,
     title: "Eternity",
     artist: "Alex Warren",
@@ -139,15 +140,17 @@ export const songs = [
     genre: "Hip-Hop",
     cover: ye,
   },
-  { id: 12,
-    title: "How It's Done", 
+  {
+    id: 12,
+    title: "How It's Done",
     artist: "HUNTR/X",
     album: "KPop Demon Hunters Soundtrack",
     duration: "2:56",
     genre: "K-pop",
     cover: golden,
   },
-  { id: 13,
+  {
+    id: 13,
     title: "Cut the shit",
     artist: "Ylva",
     album: "Cut the shit",
@@ -155,7 +158,8 @@ export const songs = [
     genre: "Pop",
     cover: cutTheShit,
   },
-  { id: 14,
+  {
+    id: 14,
     title: "Come over",
     artist: "May",
     album: "Come over",
@@ -163,15 +167,17 @@ export const songs = [
     genre: "Indie Pop",
     cover: comeOver,
   },
-  { id: 15,
+  {
+    id: 15,
     title: "Espresso",
     artist: "Sabrina",
     album: "Espresso",
     duration: "2:55",
-    genre: "Pop", 
+    genre: "Pop",
     cover: espresso,
   },
-  { id: 16,
+  {
+    id: 16,
     title: "Violent crimes",
     artist: "Kanye West",
     album: "Ye",
@@ -179,7 +185,8 @@ export const songs = [
     genre: "Hip-Hop",
     cover: ye,
   },
-  { id: 17,
+  {
+    id: 17,
     title: "Stole the show",
     artist: "Kygo",
     album: "Clou Nine",
@@ -187,7 +194,8 @@ export const songs = [
     genre: "EDM",
     cover: cloudNine,
   },
-  { id: 18,
+  {
+    id: 18,
     title: "Always remember us this way",
     artist: "Lady Gaga",
     album: "A star is born",
@@ -195,7 +203,8 @@ export const songs = [
     genre: "Soft Rock",
     cover: aStarIsBorn,
   },
-  { id: 19,
+  {
+    id: 19,
     title: "She's Always A Woman",
     artist: "Billy Joel",
     album: "The Stranger",
@@ -203,7 +212,8 @@ export const songs = [
     genre: "Soft Rock",
     cover: theStranger,
   },
-  { id: 20,
+  {
+    id: 20,
     title: "Piano Man",
     artist: "Billy Joel",
     album: "Piano Man",

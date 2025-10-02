@@ -5,6 +5,7 @@ import PlayList from "./PlayList";
 import CreateButton from "./CreateButton";
 import PlaylistCreateSection from "./PlaylistCreateSection";
 
+
 //this function returns a sidebar component that appears on all pages
 export default function SideBar() {
   const [isOpen, setIsOpen] = useState(true);
