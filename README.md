@@ -1,4 +1,5 @@
 # T08-Project-2
+This project was developed by my team and I for the course IT2810 Web Development. You can read more about the application and process below.
 
 # Project 2 - Tunesday, a music platform
 [Open in Virtual Machine](http://it2810-08.idi.ntnu.no/project2)
